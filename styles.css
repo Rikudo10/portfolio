@@ -40,7 +40,7 @@ header {
     padding-bottom: 230px !important;
 }
 .modern {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 600;
 }
 .p1 {
@@ -133,6 +133,9 @@ header {
 .section3 {
     padding-bottom: 200px;
 }
+#cont3 {
+    display: flex;
+}
 .h2Visualize {
     font-size: 36px;
     font-weight: 500;
@@ -150,14 +153,9 @@ header {
     color: rgba(247, 148, 137, 1);
     padding-left: 20px;
 }
-.left {
-    width: 50%;
-}
-.img1 {
-    position: absolute;
-    width: 550px;
-    top: 0;
-    right: 0;
+.img1 { 
+    width: 500px;
+    padding-left: 20px;
 }
 /*Section4*/
 .section4 {
@@ -223,10 +221,7 @@ header {
     padding-right: 30px;
 }
 .img2 {
-    width: 520px;
-}
-.right1 {
-    width: 50%;
+    width: 400px;
 }
 .h02 {
     font-size: 36px;
@@ -297,4 +292,116 @@ footer {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
+}
+/*Responsive*/
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 994px) {
+    #cont1 {
+        display: grid;
+    }
+    .img2 {
+        width: 500px;
+    }
+    .left1 {
+        padding-left: 150px;
+    }
+    .h02 {
+        text-align: center;
+    }
+    .search2 {
+        padding-left: 150px;
+    }
+    .modern {
+        font-size: 26px;
+    }
+  }
+@media only screen and (max-width: 872px) {
+    .footerend {
+        display: grid;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .list-group {
+        padding-right: 0;
+    }
+    .img1 {
+        width: 420px;
+    }
+    #cont3 {
+        display: grid;
+    }
+    .img2 {
+        width: 420px;
+    }
+    .right1 {
+        width: 320px;
+    }
+    .left1 {
+        padding-left: 0;
+    }
+    .search2 {
+        padding-left: 0;
+    }
+}
+ @media only screen and (max-width: 465px) {
+    .img1 {
+        width: 340px;
+    }
+    .img2 {
+        width: 340px;
+    }
+}
+ @media only screen and (max-width: 425px) {
+    .allcards {
+        display: block;
+    }
+    .card2all {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .allcard3 {
+        display: block;
+        padding-top: 0;
+    }
+    .card01 {
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .listgroup {
+         display: block; 
+         margin-left: 0; 
+    }
+    .h04 {
+        text-align: center;
+    }
+    .searchbar {
+        width: 300px;
+    }
+    .h6s1 {
+        font-size: 28px;
+    }
+    .h02 {
+        line-height: 50px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .h2Visualize {
+        font-size: 20px;
+    }
+    .p2 {
+        font-size: 16px; 
+    }
+    .img2 {
+        width: 280px;
+    }
+    .img1 {
+        width: 280px;
+    }
+    .right1 {
+        width: 280px;
+    }
+    .searchbar {
+        width: 280px;
+    }
 }
